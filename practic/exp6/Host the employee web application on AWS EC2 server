@@ -1,0 +1,19 @@
+Deploying a project on AWS EC2 involves several key steps:
+
+### 1. **Set Up Your EC2 Instance**
+
+### 2. **Connect to Your EC2 Instance**
+  ssh -i your-key.pem ubuntu@your-ec2-ip
+ 
+### 3. **Install Dependencies**
+  sudo apt update && sudo apt upgrade -y
+
+### 4. **Transfer Your Project**
+  scp -i your-key.pem -r /path/to/project ubuntu@your-ec2-ip:/home/ubuntu/project
+
+### 5. **Configure and Run the Application**
+
+  cd project
+  npm install  
+
+  node app.js 
