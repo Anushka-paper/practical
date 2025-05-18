@@ -1,0 +1,8 @@
+CREATE DATABASE leave_management;
+USE leave_management;
+CREATE TABLE employees (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    employee_name VARCHAR(50) NOT NULL,
+    hire_date DATE,
+    end_date DATE,
+);
